@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>查詢可借用數量</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function showTable() {
+      document.getElementById("resultTable").style.display = "table";
+    }
+  </script>
+</head>
+<body>
+
+  <h1>查詢可借用數量</h1>
+
+  <label>起始日期：</label>
+  <select>
+    <option>2025</option>
+    <option>2026</option>
+  </select> 年 
+
+  <select>
+    <option>01</option>
+    <option>02</option>
+    <option>03</option>
+    <option>04</option>
+    <option>05</option>
+    <option>06</option>
+    <option>07</option>
+    <option>08</option>
+    <option>09</option>
+    <option>10</option>
+    <option>11</option>
+    <option>12</option>
+  </select> 月 
+
+  <select>
+    <option>02</option>
+  <option>03</option>
+  <option>04</option>
+  <option>05</option>
+  <option>06</option>
+  <option>07</option>
+  <option>08</option>
+  <option>09</option>
+  <option>10</option>
+  <option>11</option>
+  <option>12</option>
+  <option>13</option>
+  <option>14</option>
+  <option>15</option>
+  <option>16</option>
+  <option>17</option>
+  <option>18</option>
+  <option>19</option>
+  <option>20</option>
+  <option>21</option>
+  <option>22</option>
+  <option>23</option>
+  <option>24</option>
+  <option>25</option>
+  <option>26</option>
+  <option>27</option>
+  <option>28</option>
+  <option>29</option>
+  <option>30</option>
+  <option>31</option>
+  </select> 日 
+  <br><br>
+
+  <label>歸還日期：</label>
+  <select>
+    <option>2025</option>
+    <option>2026</option>
+  </select> 年 
+
+  <select>
+    <option>01</option>
+    <option>02</option>
+    <option>03</option>
+    <option>04</option>
+    <option>05</option>
+    <option>06</option>
+    <option>07</option>
+    <option>08</option>
+    <option>09</option>
+    <option>10</option>
+    <option>11</option>
+    <option>12</option>
+  </select> 月 
+
+  <select>
+    <option>01</option>
+  <option>02</option>
+  <option>03</option>
+  <option>04</option>
+  <option>05</option>
+  <option>06</option>
+  <option>07</option>
+  <option>08</option>
+  <option>09</option>
+  <option>10</option>
+  <option>11</option>
+  <option>12</option>
+  <option>13</option>
+  <option>14</option>
+  <option>15</option>
+  <option>16</option>
+  <option>17</option>
+  <option>18</option>
+  <option>19</option>
+  <option>20</option>
+  <option>21</option>
+  <option>22</option>
+  <option>23</option>
+  <option>24</option>
+  <option>25</option>
+  <option>26</option>
+  <option>27</option>
+  <option>28</option>
+  <option>29</option>
+  <option>30</option>
+  <option>31</option>
+  </select> 日 
+  <br><br>
+
+  <button onclick="showTable()">🔍 查詢</button>
+  <br><br>
+
+  <!-- 查詢後才顯示的表格 -->
+  <table border="1" id="resultTable" style="display:none;">
+    <tr>
+      <th>借用項目</th>
+      <th>可借用數量</th>
+      <th>借用人要借用數量</th>
+    </tr>
+    <tr>
+      <td><input type="text" name="item"></td>
+      <td>10</td>
+      <td><input type="text" name="search"></td>
+    </tr>
+  </table>
+  <br>
+
+  <button onclick="window.location.href='finish.html'">送出</button>
+
+</body>
+</html>
